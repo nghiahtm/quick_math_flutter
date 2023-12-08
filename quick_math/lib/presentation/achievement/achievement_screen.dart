@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quick_math/common/enums/state_enum.dart';
-import 'package:quick_math/presentation/archivement/achievement_controller.dart';
+import 'package:quick_math/presentation/achievement/achievement_controller.dart';
 import 'package:quick_math/presentation/themes/app_color.dart';
 import 'package:quick_math/presentation/themes/app_text_style.dart';
 

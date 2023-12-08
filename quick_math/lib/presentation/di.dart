@@ -2,7 +2,7 @@ import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:quick_math/database/user_firestore.dart';
 import 'package:quick_math/presentation/app_controller.dart';
-import 'package:quick_math/presentation/archivement/achievement_controller.dart';
+import 'package:quick_math/presentation/achievement/achievement_controller.dart';
 import 'package:quick_math/presentation/game/game_controller.dart';
 import 'package:quick_math/presentation/home/home_controller.dart';
 import 'package:quick_math/presentation/leader_board/leader_board_controller.dart';

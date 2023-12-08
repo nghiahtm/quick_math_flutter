@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quick_math/presentation/archivement/achievement_screen.dart';
+import 'package:quick_math/presentation/achievement/achievement_screen.dart';
 import 'package:quick_math/presentation/game/game_screen.dart';
 import 'package:quick_math/presentation/leader_board/leader_board_screen.dart';
 import 'package:quick_math/presentation/level/level_screen.dart';
