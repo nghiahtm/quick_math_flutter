@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087902214603",
+    "project_id": "quick-math-2d1bb",
+    "storage_bucket": "quick-math-2d1bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087902214603:android:2f550684adf1918c47ee4e",
+        "android_client_info": {
+          "package_name": "com.example.quick_math"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA9QctOaHRtWIUbDZecu4-kwoROBrQXcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
