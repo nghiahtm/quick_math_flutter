@@ -18,6 +18,7 @@ class LeaderboardModel {
   List<InformationUserScore> easy = [];
   List<InformationUserScore> normal = [];
   List<InformationUserScore> hard = [];
+  List<InformationUserScore> threeOperator = [];
 
   @override
   String toString() {
@@ -32,17 +33,19 @@ class LeaderboardModel {
         if (level.level == LevelEnum.normal) {
           normal.add(infor);
         } else if (level.level == LevelEnum.hard) {
-          //infor.hard = LevelModel(highScore: level.highScore);
           hard.add(infor);
-        } else {
-          // infor.easy = LevelModel(highScore: level.highScore);
+        }
+        else if (level.level == LevelEnum.threeOperatorMode) {
+          threeOperator.add(infor);
+        }
+        else {
           easy.add(infor);
-          // log("list easy level: ${easy.toString()}");
         }
       }
     }
     normal.sort((a, b) => b.highScore!.compareTo(a.highScore!));
     easy.sort((a, b) => b.highScore!.compareTo(a.highScore!));
     hard.sort((a, b) => b.highScore!.compareTo(a.highScore!));
+    threeOperator.sort((a, b) => b.highScore!.compareTo(a.highScore!));
   }
 }

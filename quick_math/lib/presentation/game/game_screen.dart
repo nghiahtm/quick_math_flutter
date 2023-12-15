@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:provider/provider.dart';
 import 'package:quick_math/common/math/game_play.dart';
 import 'package:quick_math/common/music_constant.dart';
@@ -242,7 +241,7 @@ class _GameScreenState extends State<GameScreen>
   void _reset() {
     animationController.reset();
     randomOperator = 1 + Random().nextInt(3);
-    widget.gamePlay.play(randomOperator);
+    widget.gamePlay.play(randomOperator,);
     widget.gamePlay.showOperator;
     animationController.forward();
   }

@@ -13,7 +13,7 @@ class LeaderBoardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       initialIndex: 0,
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -23,6 +23,7 @@ class LeaderBoardScreen extends StatelessWidget {
           ),
           centerTitle: true,
           bottom: TabBar(
+            isScrollable: true,
             indicatorColor: AppColor.white,
             dividerColor: AppColor.mainColor,
             tabs: <Widget>[
@@ -44,6 +45,12 @@ class LeaderBoardScreen extends StatelessWidget {
                   style: AppTextStyle.heading6,
                 ),
               ),
+              Tab(
+                child: Text(
+                  LevelEnum.threeOperatorMode,
+                  style: AppTextStyle.heading6,
+                ),
+              ),
             ],
           ),
         ),
@@ -52,7 +59,7 @@ class LeaderBoardScreen extends StatelessWidget {
             builder: (context, snapshot) {
               return TabBarView(
                 children: List.generate(
-                  3,
+                  4,
                   (index) {
                     return Builder(builder: (context) {
                       if (snapshot.connectionState == ConnectionState.waiting) {
@@ -69,6 +76,8 @@ class LeaderBoardScreen extends StatelessWidget {
                         scoreLevel = listLevel.normal;
                       } else if (index == 2) {
                         scoreLevel = listLevel.hard;
+                      }else if (index == 3) {
+                        scoreLevel = listLevel.threeOperator;
                       }
                       return ListView.builder(
                         itemBuilder: (_, indexLevel) {

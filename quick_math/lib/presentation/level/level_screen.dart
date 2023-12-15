@@ -6,7 +6,8 @@ import 'package:quick_math/common/enums/state_enum.dart';
 import 'package:quick_math/common/math/easy_mode.dart';
 import 'package:quick_math/common/math/game_play.dart';
 import 'package:quick_math/common/math/hard_mode.dart';
-import 'package:quick_math/common/math/normal_model.dart';
+import 'package:quick_math/common/math/normal_mode.dart';
+import 'package:quick_math/common/math/three_operator_mode.dart';
 import 'package:quick_math/models/user_model.dart';
 import 'package:quick_math/presentation/home/home_controller.dart';
 import 'package:quick_math/presentation/level/level_controller.dart';
@@ -78,10 +79,9 @@ class _LevelScreenState extends State<LevelScreen> {
                                 style:
                                     const TextStyle(color: AppColor.mainColor),
                                 decoration: const InputDecoration(
-                                  fillColor: AppColor.white,
-                                  filled: true,
-                                  counterText: ""
-                                ),
+                                    fillColor: AppColor.white,
+                                    filled: true,
+                                    counterText: ""),
                               ),
                             ),
                           ],
@@ -125,6 +125,16 @@ class _LevelScreenState extends State<LevelScreen> {
                         onPressed: () async {
                           await _checkInformation(levelController, HardMode(),
                               level: LevelEnum.hard);
+                        }),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    AppButton(
+                        title: LevelEnum.threeOperatorMode,
+                        onPressed: () async {
+                          await _checkInformation(
+                              levelController, ThreeOperatorMode(),
+                              level: LevelEnum.threeOperatorMode);
                         }),
                   ],
                 ),

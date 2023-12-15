@@ -10,21 +10,21 @@ class NormalMode extends GamePlay{
     num2 = 5 + _random.nextInt(15);
   }
   @override
-  String gameMulti() {
+  String gameMulti({int operator  = 0}) {
     num1 = 5 + _random.nextInt(5);
     num2 = 5 + _random.nextInt(5);
     return "$num1 * $num2";
   }
 
   @override
-  String gamePlus() {
+  String gamePlus({int operator  = 0}) {
     num1 = _random.nextInt(10);
     num2 = _random.nextInt(10);
     return "$num1 + $num2";
   }
 
   @override
-  String gameSubtract() {
+  String gameSubtract({int operator  = 0}) {
     num1 = _random.nextInt(10);
     return "$num1 - $num2";
   }

@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
               }),
             ),
             Flexible(
-              flex: 3,
+              flex: 4,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -60,7 +60,6 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            const Spacer(),
             IconButton(
               onPressed: () {
                 context.read<HomeController>().setPlayMusic();

@@ -10,21 +10,21 @@ class HardMode extends GamePlay {
     num2 = 10 + _random.nextInt(30);
   }
   @override
-  String gameMulti() {
+  String gameMulti({int operator  = 0}) {
     num1 = 10 + _random.nextInt(20);
     num2 = 10 + _random.nextInt(20);
     return "$num1 * $num2";
   }
 
   @override
-  String gamePlus() {
+  String gamePlus({int operator  = 0}) {
     num1 = 10 + _random.nextInt(30);
     num2 = 10 + _random.nextInt(30);
     return "$num1 + $num2";
   }
 
   @override
-  String gameSubtract() {
+  String gameSubtract({int operator  = 0}) {
     num1 = 10 + _random.nextInt(30);
     num2 = 10 + _random.nextInt(30);
     return "$num1 - $num2";

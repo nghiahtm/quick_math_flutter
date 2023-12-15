@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: Di.providers,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         routes: routesMap,
         onGenerateRoute: onGenerateRoute,
         title: 'Quick Math',
