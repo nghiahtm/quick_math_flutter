@@ -36,8 +36,8 @@ class Di {
             userRepository: Provider.of<UserRepository>(context, listen: false),
             appController: Provider.of<AppController>(context, listen: false))),
     ChangeNotifierProvider(
-        create: (context) => LeaderboardController(
-          userRepository: Provider.of<UserRepository>(context,listen: false)
-        ),)
+      create: (context) => LeaderboardController(
+          userRepository: Provider.of<UserRepository>(context, listen: false)),
+    )
   ];
 }

@@ -6,6 +6,7 @@ import 'package:quick_math/common/music_constant.dart';
 class HomeController with ChangeNotifier {
   bool isPlayMusic = true;
   final player = AudioPlayer();
+  
   HomeController() {
     player.setAsset(MusicConstant.bg);
     player.play();
